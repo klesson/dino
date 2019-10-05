@@ -2,3 +2,59 @@ body {
     background-color: #ece9e4;
     margin: 0;
 }
+presentation {
+    display: block;
+    width: 100%;    
+    background-color: #ece9e4;    
+}
+
+presentation img {
+    margin: auto;
+    display: block;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 16px);
+}
+
+button-panel {
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    top: calc(50% - 30px);
+}
+
+.button {
+    font-size: 80px;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    color: #d9d2c8;
+    transition: color 0.4s ease-in;
+}
+
+.button:hover {
+    color: blue;
+}
+
+#button-next {
+    float: right;
+}
+
+counter {
+    position: fixed;
+    right: 12px;
+    top: 12px;
+    background-color: darkorchid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+#page-counter {
+    margin-top: 5px;
+    color: white;
+}
