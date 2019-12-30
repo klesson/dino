@@ -1,60 +1,54 @@
 body {
-    background-color: #ece9e4;
-    margin: 0;
+    background-color: #ece9e4; /* фон страницы */
+    margin: 0; /* обнуляем стандартный отступ страницы */
 }
-presentation {
-    display: block;
-    width: 100%;    
-    background-color: #ece9e4;    
+main {
+    height: 100vh; /* по высоте экрана */   
 }
 
-presentation img {
-    margin: auto;
-    display: block;
-	position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: calc(100% - 16px);
+main img {
+    margin: auto; /* центрирование */
+    display: block;/* блочная модель */
+    height: 100%; /* высота по высоте страницы */
 }
 
-button-panel {
-    position: fixed;
-    left: 8px;
-    right: 8px;
-    top: calc(50% - 30px);
+nav {
+    position: fixed; /* фиксированное положение на экране */
+    left: 8px; /* отступ слева */
+    right: 8px; /* отступ справа */
+    top: calc(50% - 30px); /* отступ сверху */
+    min-width: 530px; /* минимальная ширина блока */
 }
 
 .button {
-    font-size: 80px;
-    display: inline-block;
-    cursor: pointer;
-    user-select: none;
-    color: #d9d2c8;
-    transition: color 0.4s ease-in;
+    font-size: 80px; /* размер шрифта */
+    display: inline-block; /* расположение на одной строке */
+    cursor: pointer; /* смена курсора */
+    user-select: none; /* отключить возможность выделения */
+    color: #d9d2c8; /* цвет */
+    transition: color 0.4s ease-in; /* плавная анимация */
 }
 
 .button:hover {
-    color: blue;
+    color: blue; /* цвет кнопки при наведении курсором мыши */
 }
 
 #button-next {
-    float: right;
+    float: right; /* позиционирование справа */
 }
 
-counter {
-    position: fixed;
-    right: 12px;
-    top: 12px;
-    background-color: darkorchid;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 16px;
+.top-container {
+    position: fixed; /* фиксированное позиционирование */
+    right: 12px; /* позиционирование справа */
+    top: 12px; /* позиционирование сверху */
+    background-color: darkorchid; /* цвет фона */
+    width: 30px; /* ширина */
+    height: 30px; /* высота */
+    text-align: center; /* центрирование текста */
+    border-radius: 16px; /* скругление углов */
 }
 
 #page-counter {
-    margin-top: 5px;
-    color: white;
+    margin-top: 5px; /* отступ сверху */
+    color: white; /* цвет текста */
 }
